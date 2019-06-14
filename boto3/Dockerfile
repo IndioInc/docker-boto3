@@ -1,3 +1,2 @@
-FROM alpine:latest
-RUN apk -v --update add python3 \
-    && python3 -m pip install -U boto3
+FROM python:3.7-alpine
+RUN python3 -m pip install -U boto3
